@@ -9,21 +9,21 @@ function Trending() {
             name="Product 1"
             price={19.99}
             rating={4.5}
-            image="product1.jpg"
+            image="https://i.pinimg.com/474x/66/d8/b9/66d8b967907bb785450f9c4425c01da8.jpg"
             category="Category 1"
             />
             <Product
             name="Product 2"
             price={24.99}
             rating={4.2}
-            image="product2.jpg"
+            image="https://i.pinimg.com/474x/66/d8/b9/66d8b967907bb785450f9c4425c01da8.jpg"
             category="Category 2"
             />
             <Product
             name="Product 3"
             price={14.99}
             rating={4.8}
-            image="product3.jpg"
+            image="https://i.pinimg.com/474x/66/d8/b9/66d8b967907bb785450f9c4425c01da8.jpg"
             category="Category 3"
             />
         </div>

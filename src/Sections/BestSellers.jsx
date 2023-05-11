@@ -9,21 +9,21 @@ function BestSellers() {
             name="Product 1"
             price={19.99}
             rating={4.5}
-            image="product1.jpg"
+            image="https://i.pinimg.com/474x/2d/48/30/2d4830697fcebfc7c43812e55c75c800.jpg"
             category="Category 1"
             />
             <Product
             name="Product 2"
             price={24.99}
             rating={4.2}
-            image="product2.jpg"
+            image="https://i.pinimg.com/474x/2d/48/30/2d4830697fcebfc7c43812e55c75c800.jpg"
             category="Category 2"
             />
             <Product
             name="Product 3"
             price={14.99}
             rating={4.8}
-            image="product3.jpg"
+            image="https://i.pinimg.com/474x/2d/48/30/2d4830697fcebfc7c43812e55c75c800.jpg"
             category="Category 3"
             />
         </div>

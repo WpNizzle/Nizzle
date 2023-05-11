@@ -9,21 +9,21 @@ function FreeProduct() {
             name="Product 1"
             price={"Free"}
             rating={4.5}
-            image="product1.jpg"
+            image="https://i.pinimg.com/736x/f3/7c/ef/f37cef3dc1024d0dd884f4bb61c2423f.jpg"
             category="Category 1"
             />
             <Product
             name="Product 2"
             price={"Free"}
             rating={4.2}
-            image="product2.jpg"
+            image="https://i.pinimg.com/736x/f3/7c/ef/f37cef3dc1024d0dd884f4bb61c2423f.jpg"
             category="Category 2"
             />
             <Product
             name="Product 3"
             price={"Free"}
             rating={4.8}
-            image="product3.jpg"
+            image="https://i.pinimg.com/736x/f3/7c/ef/f37cef3dc1024d0dd884f4bb61c2423f.jpg"
             category="Category 3"
             />
         </div>
