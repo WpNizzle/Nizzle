@@ -1,8 +1,13 @@
 // import Nav from '../components/Nav'
+import MarketPlace from "../Sections/MarketPlaceProduct";
+import Newsletter from "../components/NewsletterSub";
+import Footer from "../components/Footer";
 function Home(){
     return(
         <section>
-            home Page under construction
+            <MarketPlace/>
+            <Newsletter/>
+            <Footer/>
         </section>
     )
 }
