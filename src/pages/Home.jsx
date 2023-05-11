@@ -7,10 +7,12 @@ import FeaturedProducts from "../Sections/Featured";
 import BestSellers from "../Sections/BestSellers";
 import RecentlyAdded from "../Sections/RecentlyAdded";
 import Trending from "../Sections/Trending";
+import HeroSection from "../Sections/HomeSection";
 
 function Home(){
     return(
         <section>
+            <HeroSection/>
             <FreeProduct/>
             <FeaturedProducts/> 
             <BestSellers/>    
