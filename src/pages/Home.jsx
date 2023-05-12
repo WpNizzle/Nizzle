@@ -11,7 +11,7 @@ import HeroSection from "../Sections/HomeSection";
 
 function Home(){
     return(
-        <section>
+        <section className="bg-gray-100">
             <HeroSection/>
             <FreeProduct/>
             <FeaturedProducts/> 

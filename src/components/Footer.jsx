@@ -9,7 +9,7 @@ function Footer(){
     
       <div className="">
         <h6
-          className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
+          className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start hover:text-blue-500">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -29,53 +29,53 @@ function Footer(){
       
       <div className="">
         <h6
-          className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+          className="mb-4 flex justify-center font-semibold uppercase md:justify-start hover:text-blue-500">
           Products & Partners
         </h6>
         <p className="mb-4">
-          <a href="#!" className="text-neutral-600 dark:text-neutral-200"
+          <a href="#!" className="text-neutral-600 dark:text-neutral-200 hover:text-blue-500"
             >Wordpress Plugins</a
           >
         </p>
         <p className="mb-4">
-          <a href="#!" className="text-neutral-600 dark:text-neutral-200"
+          <a href="#!" className="text-neutral-600 dark:text-neutral-200 hover:text-blue-500"
             >Website Templates</a
           >
         </p>
         <p className="mb-4">
-          <a href="#!" className="text-neutral-600 dark:text-neutral-200"
+          <a href="#!" className="text-neutral-600 dark:text-neutral-200 hover:text-blue-500"
             >Landing Pages</a
           >
         </p>
         <p>
-          <a href="#!" className="text-neutral-600 dark:text-neutral-200"
-            >Noptin</a
+          <a href="#!" className="text-neutral-600 dark:text-neutral-200 hover:text-blue-500"
+            >Marketing Templates</a
           >
         </p>
       </div>
       
       <div className="">
         <h6
-          className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+          className="mb-4 flex justify-center font-semibold uppercase md:justify-start hover:text-blue-500">
           Company
         </h6>
         <p className="mb-4">
-          <a href="#!" className="text-neutral-600 dark:text-neutral-200"
+          <a href="#!" className="text-neutral-600 dark:text-neutral-200 hover:text-blue-500"
             >About Us</a
           >
         </p>
         <p className="mb-4">
-          <a href="#!" className="text-neutral-600 dark:text-neutral-200"
+          <a href="#!" className="text-neutral-600 dark:text-neutral-200 hover:text-blue-500"
             >Blogs</a
           >
         </p>
         <p className="mb-4">
-          <a href="#!" className="text-neutral-600 dark:text-neutral-200"
+          <a href="#!" className="text-neutral-600 dark:text-neutral-200 hover:text-blue-500"
             >Contact Us</a
           >
         </p>
         <p>
-          <a href="#!" className="text-neutral-600 dark:text-neutral-200"
+          <a href="#!" className="text-neutral-600 dark:text-neutral-200 hover:text-blue-500"
             >Made with WpFrenzy</a
           >
         </p>
@@ -83,20 +83,30 @@ function Footer(){
       
       <div>
         <h6
-          className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
-          Support
+          className="mb-4 flex justify-center font-semibold uppercase md:justify-start">          
+          <a href="#!" className="text-neutral-600 dark:text-neutral-200 hover:text-blue-500"
+            >Support</a
+          >
         </h6>
         <p className="mb-4 flex items-center justify-center md:justify-start">
-            Help center
+          <a href="#!" className="text-neutral-600 dark:text-neutral-200 hover:text-blue-500"
+              >Help Center</a
+            >
         </p>
         <p className="mb-4 flex items-center justify-center md:justify-start">
-            Report Spam
+          <a href="#!" className="text-neutral-600 dark:text-neutral-200 hover:text-blue-500"
+              >Report Spam</a
+            >
         </p>
         <p className="mb-4 flex items-center justify-center md:justify-start">
-            Refund Policy
+          <a href="#!" className="text-neutral-600 dark:text-neutral-200 hover:text-blue-500"
+              >Refund Policy</a
+          >
         </p>
         <p className="flex items-center justify-center md:justify-start">
-           Privacy Policy
+          <a href="#!" className="text-neutral-600 dark:text-neutral-200 hover:text-blue-500"
+              >Privacy Policy</a
+          >
         </p>
       </div>
     </div>
