@@ -12,7 +12,7 @@ function Hero() {
       <h2 className="text-2xl md:text-2xl xl:text-4xl font-bold tracking-tight">
         Welcome to Our World of Simplicity!
       </h2>
-      <p className="font-bold text-black my-4 text-md max-w-lg lg:max-w-none text-center lg:text-left">
+      <p className="font-bold text-white my-4 text-md max-w-lg lg:max-w-none text-center lg:text-left">
         We Craft WordPress Plugins, Themes, and Website Templates.
       </p>
       <button className="bg-teal-800 text-white font-semibold py-2 px-4 rounded hover:bg-teal-300 hover:text-black transition-colors duration-300">
