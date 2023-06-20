@@ -1,6 +1,6 @@
 function Newsletter() {
     return (
-        <section className="bg-gray-100 py-10">
+        <section className="bg-teal-950 py-10">
 <div className="container px-6 mx-auto">
   <section className="mb-6 text-gray-800 text-center">
     <div className="flex flex-wrap justify-center">
