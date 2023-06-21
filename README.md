@@ -1,2 +1,2 @@
-# WpFrenzy
-official website for WpFrenzy
+# WpNizzle
+official website for WpNizzle
