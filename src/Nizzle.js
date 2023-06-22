@@ -35,4 +35,26 @@ function handleToggle() {
     const preloader = document.getElementById('preloader');
     preloader.classList.add('hide');
   });
+
+  const services = document.querySelectorAll('.service');
+
+  const animateOnScroll = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate__fadeInLeft');
+        entry.target.style.animationDuration = '3.5s';
+        observer.unobserve(entry.target);
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(animateOnScroll, {
+    rootMargin: '-50px 0px',
+    threshold: 0.2,
+  });
+
+  services.forEach((service) => {
+    service.style.opacity = '0';
+    observer.observe(service);
+  });
   
