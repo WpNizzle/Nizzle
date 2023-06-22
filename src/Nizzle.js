@@ -30,3 +30,9 @@ function handleToggle() {
     const targetSection = document.getElementById("Products");
     targetSection.scrollIntoView({ behavior: "smooth" });
   });
+
+  window.addEventListener('load', function () {
+    const preloader = document.getElementById('preloader');
+    preloader.classList.add('hide');
+  });
+  
