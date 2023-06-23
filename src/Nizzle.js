@@ -37,6 +37,7 @@ function handleToggle() {
   });
 
   const services = document.querySelectorAll('.service');
+  const Discover = document.querySelectorAll('.Discover');
 
   const animateOnScroll = (entries, observer) => {
     entries.forEach((entry) => {
@@ -57,4 +58,5 @@ function handleToggle() {
     service.style.opacity = '0';
     observer.observe(service);
   });
+  
   
