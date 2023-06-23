@@ -27,7 +27,7 @@ function handleToggle() {
 
   document.getElementById("viewProductsBtn").addEventListener("click", function(event) {
     event.preventDefault();
-    const targetSection = document.getElementById("Products");
+    const targetSection = document.getElementById("Discover");
     targetSection.scrollIntoView({ behavior: "smooth" });
   });
 
