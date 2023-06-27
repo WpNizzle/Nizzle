@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/public/Nizzle.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UserSync - import export users via csv wp plugin</title>
+  
+  <!-- Add meta tags for SEO -->
+  <meta name="description" content="Nizzle offers high-quality WordPress plugins, themes, and templates for your website needs." />
+  <meta name="keywords" content="Nizzle, WordPress, plugins, themes, website templates, development" />
+  
+  <meta property="og:title" content="Nizzle - WordPress Plugins, Themes, and Templates" />
+  <meta property="og:description" content="Nizzle offers high-quality WordPress solutions to meet your needs." />
+  <meta property="og:image" content="/public/og.png" />
+  <meta name="twitter:title" content="Nizzle - WordPress Plugins, Themes, and Templates" />
+  <meta name="twitter:description" content="Nizzle offers high-quality WordPress solutions to meet your needs." />
+  <meta name="twitter:image" content="/public/og.png" />
+  <meta property="og:url" content="https://wpnizzle.com/" />  
+
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="../src//input.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="md:relative md:min-h-screen">
+    <!-- Navbar -->
+    <nav class="fixed top-0 z-50 left-0 right-0 h-16 bg-gray-700 shadow-md text-white flex items-center justify-between px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between md:justify-center w-full items-center">
+        <div class="w-full text-center">
+            <a href="/index.html#Home" class="font-bold text-lg">
+            NIZZLE
+            </a>
+        </div>
+        
+        <div class="hidden lg:flex w-full">
+            <div class="flex justify-evenly w-full">
+            <div>
+                <a href="/index.html#Home" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-gray-600">
+                Home
+                </a>
+                <a href="/index.html#Plugins" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-gray-600">
+                Plugins
+                </a>
+                <!-- <a href="#Themes" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600">
+                Themes
+                </a> -->
+                <!-- <a href="#Templates" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600">
+                Templates
+                </a> -->
+            </div>
+<!--       
+            <a href="#Contact" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600">
+                Contact
+            </a> -->
+
+            </div>
+        </div>
+        </div>
+        
+        <div class="flex items-center justify-end">
+        <button class="lg:hidden text-white focus:outline-none" onclick="handleToggle()">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+        <div id="expandedMenu" class="hidden lg:flex lg:items-center absolute top-0 right-0 bg-teal-700 h-screen w-full lg:h-auto lg:w-auto lg:relative opacity-0 transition ease-in duration-200">
+            <button class="lg:hidden text-white focus:outline-none ml-auto" onclick="handleToggle()">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+            </button>
+            <div class="lg:flex-grow">
+            <a href="/index.html#Home" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-gray-600" onclick="handleLinkClick()">Home</a>
+            <!-- <a href="#About" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600" onclick="handleLinkClick()">About</a> -->
+            <a href="/index.html#Plugins" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-gray-600" onclick="handleLinkClick()">Plugins</a>
+            <!-- <a href="#Contact" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600" onclick="handleLinkClick()">Contact</a> -->
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!-- end of navbar --> 
+
+    <section class="text-left md:text-center px-4 py-16 lg:px-8">
+        <div>
+            <img src="/public/UserSyncBanner.jpg" alt="" srcset="" class="h-16 md:h-40 mt-6 w-full">
+        </div>
+
+        <section class="grid grid-cols-1 gap-8 my-2 md:grid-cols-2">
+            <div class="text-left">
+                <h2 class="text-xl md:text-3xl font-bold mb-4">Description</h2>
+                <p class="text-md mb-4">
+                    With this plugin, you can easily import and export users using CSV files, saving you time and effort while ensuring accurate and efficient user management.
+                </p>                
+                <p class="text-md">
+                    The User Bulk Management plugin streamlines user management, saving you valuable time and ensuring accurate and consistent user data. Whether you need to import a large number of users, update existing user information, export user data, or simply improve your user management workflow, this plugin is the solution you've been looking for.
+                </p>
+            </div>
+            <div class="text-left py-12">              
+                
+                <p class="text-md mb-4">
+                    The User Bulk Management plugin offers a range of features designed to simplify user management tasks. Let's take a closer look at what this plugin can do for you:
+                </p>
+                <ul class="text-md mb-4 mx-auto text-left max-w-2xl">
+                    <div class="flex  items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-800">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                        </svg>            
+                        <p class=" text-sm ml-1">Import your mailing list and create WordPress accounts.</p>
+                    </div>
+                    <div class="flex  items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-800">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                        </svg>            
+                        <p class=" text-sm ml-1">Export your WordPress users to your mailing list.</p>
+                    </div>
+                    <div class="flex  items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-800">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                        </svg>            
+                        <p class=" text-sm ml-1">Move users between WordPress installations</p>
+                    </div>
+                    <div class="flex  items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-800">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                        </svg>            
+                        <p class=" text-sm ml-1">Edit your users in Microsoft Excel.</p>
+                    </div>
+                    <div class="flex  items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-800">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                        </svg>            
+                        <p class=" text-sm ml-1">Backup your users.</p>
+                    </div>
+                </ul>
+            </div>
+        </section>
+    </section>
+
+    <footer class="bg-gray-800 md:absolute md:bottom-0 md:right-0 md:left-0 text-neutral-300 py-4">
+        <div class="container mx-auto px-4">
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="text-sm">&copy; WPNizzle</span>
+              <span class="text-sm ml-2" id="current-year"></span>
+            </div>
+            <div>
+              <ul class="flex space-x-4">
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeAySWaGqmVU1Qkat1tGzzp-aweiImgmM5Az6_LZgV9i_9PWA/viewform?usp=sf_link" class="text-neutral-300 hover:text-neutral-200">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
+      
+    
+    <script src="../src/Nizzle.js"></script>
+</body>
+</html>

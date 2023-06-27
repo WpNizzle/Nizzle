@@ -25,7 +25,7 @@
 </head>
 <body class="">
   <div id="preloader" class="preloader">
-    <div class="flex flex-col bg-teal-500 w-full h-full justify-center items-center">
+    <div class="flex flex-col bg-white w-full h-full justify-center items-center">
       <div class="loader"></div>
     </div>
   </div>
@@ -33,7 +33,7 @@
   <section class="">
 
     <!-- Navbar -->
-    <nav class="fixed top-0 z-50 left-0 right-0 h-16 bg-teal-700 shadow-md text-white flex items-center justify-between px-4 sm:px-6 lg:px-8">
+    <nav class="fixed top-0 z-50 left-0 right-0 h-16 bg-gray-700 shadow-md text-white flex items-center justify-between px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between md:justify-center w-full items-center">
         <div class="w-full text-center">
           <a href="#Home" class="font-bold text-lg">
@@ -43,21 +43,21 @@
       
         <div class="hidden lg:flex w-full">
           <div class="flex justify-evenly w-full">
-            <!-- <div>
-              <a href="#Home" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600">
+            <div>
+              <a href="#Home" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-gray-600">
                 Home
               </a>
-              <a href="#Plugins" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600">
+              <a href="#Plugins" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-gray-600">
                 Plugins
               </a>
-              <a href="#Themes" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600">
+              <!-- <a href="#Themes" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600">
                 Themes
-              </a>
-              <a href="#Templates" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600">
+              </a> -->
+              <!-- <a href="#Templates" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600">
                 Templates
-              </a>
+              </a> -->
             </div>
-      
+<!--       
             <a href="#Contact" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600">
               Contact
             </a> -->
@@ -72,40 +72,48 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
-        <div id="expandedMenu" class="hidden lg:flex lg:items-center absolute top-0 right-0 bg-teal-700 h-screen w-full lg:h-auto lg:w-auto lg:relative opacity-0 transition ease-in duration-200">
+        <div id="expandedMenu" class="hidden lg:flex lg:items-center absolute top-0 right-0 bg-gray-700 h-screen w-full lg:h-auto lg:w-auto lg:relative opacity-0 transition ease-in duration-200">
           <button class="lg:hidden text-white focus:outline-none ml-auto" onclick="handleToggle()">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
             </svg>
           </button>
           <div class="lg:flex-grow">
-            <!-- <a href="#Home" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600" onclick="handleLinkClick()">Home</a>
-            <a href="#About" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600" onclick="handleLinkClick()">About</a>
-            <a href="#Plugins" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600" onclick="handleLinkClick()">Plugins</a>
-            <a href="#Contact" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600" onclick="handleLinkClick()">Contact</a> -->
+            <a href="#Home" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-gray-600" onclick="handleLinkClick()">Home</a>
+            <!-- <a href="#About" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600" onclick="handleLinkClick()">About</a> -->
+            <a href="#Plugins" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-gray-600" onclick="handleLinkClick()">Plugins</a>
+            <!-- <a href="#Contact" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600" onclick="handleLinkClick()">Contact</a> -->
           </div>
         </div>
       </div>
     </nav>
     <!-- end of navbar --> 
 
-    <section class="bg-teal-900 bg-opacity-90 py-16 min-h-screen flex justify-center items-center" id="Home">
-      <div class="container flex flex-col justify-center mx-auto px-4">
-        <div class="text-center animate-fade-in">
-          <h1 class="text-4xl font-extrabold text-white mb-4">Welcome to Our World of Simplicity!</h1>
-          <p class="text-lg text-white font-bold">We Craft WordPress Plugins, Themes, and Website Templates.</p>
-          <a href="#Discover" class="mt-6 inline-block py-3 px-8 text-lg font-semibold text-white bg-teal-600 hover:bg-teal-700 rounded-md" id="viewProductsBtn">Discover Nizzle</a>
+    <section class="bg-gray-200 text-gray-800 py-16 min-h-screen flex justify-center items-center" id="Home">
+      <div class="container flex flex-col md:flex-row items-center justify-center mx-auto px-4">
+        <div class="text-center md:text-left animate-fade-in">
+          <h1 class="text-4xl font-extrabold text-gray-800 mb-4">Welcome to Our World of Simplicity!</h1>
+          <p class="text-lg font-bold">We Craft WordPress Plugins, Themes, and Website Templates.</p>
+          <a href="#Discover" class="mt-6 inline-block py-3 px-8 text-lg font-semibold text-white bg-gray-600 hover:bg-gray-700 rounded-md" id="viewProductsBtn">Discover Nizzle</a>
+        </div>
+        <div class="mt-8">
+          <img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1lZXRpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="Illustration" class="w-3/4 max-w-lg rounded-full mx-auto">
         </div>
       </div>
     </section>
     
-    <div class="container bg-teal-800 py-6 bg-opacity-90 mx-auto md:px-6" id="Discover">
-      <section class="mb-12">
+    
+    <div class="container bg-gray-200 py-3 md:py-6 mx-auto md:px-6" id="Discover">
+      <section class="md:mb-12 mb-2">
         <div class="container mx-auto text-center lg:text-left xl:px-32">
           <div class="grid items-center lg:grid-cols-2">
+            <div class="hidden md:flex">
+              <img src="https://images.unsplash.com/photo-1630487656049-6db93a53a7e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTk0fHxtZWV0aW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"
+                class="w-full rounded-lg shadow-lg dark:shadow-black/20" alt="image" />
+            </div>
             <div class="mb-12 lg:mb-0">
               <div
-                class="relative z-[1] block rounded-lg bg-[hsla(0,0%,100%,0.55)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[30px] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 md:px-12 lg:-mr-14">
+                class="relative z-[1] block rounded-lg bg-[hsla(0,0%,9%,1)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[30px] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 md:px-12 lg:-ml-14">
                 <h2 class="mb-8 text-3xl text-white font-bold">Discover Nizzle</h2>
                 <p class="mb-8 pb-2 text-neutral-500 dark:text-neutral-300 lg:pb-0">
                   Nizzle is a leading provider of WordPress plugins, themes, and website templates. Our team is dedicated to crafting high-quality solutions that empower businesses and individuals to create stunning products and enhance their online presence.
@@ -141,31 +149,25 @@
                 </div>
     
                 <p class="mb-0 text-neutral-500 dark:text-neutral-300">
-                  At Nizzle, we have a team of highly skilled professionals who are dedicated to providing exceptional services. With their expertise and passion, we ensure that every project is handled with utmost care and precision.We are committed to delivering the highest quality of work to our clients. Our attention to detail, innovative solutions, and thorough testing ensure that every project we undertake meets the highest standards of quality and excellence.With Nizzle, you can expect a seamless and enjoyable experience. Our team strives to create user-friendly solutions that not only meet your requirements but also provide a delightful experience for your users.
+                  At Nizzle, we have a team of highly skilled professionals who are dedicated to providing exceptional services. With their expertise and passion, we ensure that every project is handled with utmost care and precision. We are committed to delivering the highest quality of work to our clients. Our attention to detail, innovative solutions, and thorough testing ensure that every project we undertake meets the highest standards of quality and excellence. With Nizzle, you can expect a seamless and enjoyable experience. Our team strives to create user-friendly solutions that not only meet your requirements but also provide a delightful experience for your users.
                 </p>
               </div>
-            </div>
-    
-            <div>
-              <img src="https://images.unsplash.com/photo-1630487656049-6db93a53a7e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTk0fHxtZWV0aW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"
-                class="w-full rounded-lg shadow-lg dark:shadow-black/20" alt="image" />
             </div>
           </div>
         </div>
       </section>
     </div>
-    
 
-    <section class="py-14 bg-teal-800 bg-opacity-95" id="Services">
+    <section class="py-14 bg-gray-200" id="Services">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-white text-center mb-8">Our Services</h2>
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Our Services</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Service 1: WordPress Plugin Development -->
-          <div class="bg-teal-900 text-white rounded-lg shadow-lg p-6 service animate__animated">
+          <div class="bg-gray-900 text-white rounded-lg shadow-lg p-6 service animate__animated">
             <div class="flex items-center mb-4">
               <div class="mr-4">
-                <svg class="w-10 h-10 text-teal-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <svg class="w-10 h-10 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                   <path d="M17 4a1 1 0 00-1-1h-4V1a1 1 0 10-2 0v2H4a1 1 0 00-1 1v13H1a1 1 0 000 2h18a1 1 0 000-2h-1V4zM6 2h8v2H6V2zm10 15H4V7h12v10z" />
                 </svg>
               </div>
@@ -173,19 +175,19 @@
             </div>
             <p class=" text-sm mb-4">We specialize in creating custom WordPress plugins tailored to meet your unique needs. Our plugins are designed to enhance the functionality of your website, streamline processes, and provide a seamless user experience.</p>
             <div class="flex  items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-teal-600">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-white">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
               </svg>              
               <p class=" text-sm  ml-1">Extend the capabilities of your WordPress site</p>
             </div>
             <div class="flex  items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-teal-600">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-white">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
               </svg>              
               <p class=" text-sm  ml-1">Improve efficiency and automation</p>
             </div>
             <div class="flex  items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-teal-600">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-white">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
               </svg>              
               <p class=" text-sm  ml-1">Enhance user engagement and interaction</p>
@@ -193,10 +195,10 @@
           </div>
 
           <!-- Service 2: Theme Customization -->
-          <div class="bg-teal-900 text-white rounded-lg shadow-lg p-6 service animate__animated">
+          <div class="bg-gray-900 text-white rounded-lg shadow-lg p-6 service animate__animated">
             <div class="flex items-center mb-4">
               <div class="mr-4">
-                <svg class="w-10 h-10 text-teal-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <svg class="w-10 h-10 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                   <path d="M10 1L2 5V8a2 2 0 002 2h.59l3.7 6.17A2 2 0 0010 18h.01a2 2 0 001.71-.97L17.41 10H18a2 2 0 002-2V5l-8-4zM8 10h4v7.44l-3-4.99a2 2 0 00-1.76-.96L5 12.43V10h3v2h2v-.97l1.74-2.93a2 2 0 00-1.75-3.1L10 4.3 7.26 1.98a2 2 0 10-2.02 3.45L6 8.02V10z" />
                 </svg>
               </div>
@@ -204,19 +206,19 @@
             </div>
             <p class="text-sm mb-4">We offer professional WordPress theme customization services to help you create a unique and visually appealing website. Our team of experts will work closely with you to understand your requirements and tailor the theme to match your brand identity.</p>
             <div class="flex  items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-teal-600">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-white">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
               </svg>              
               <p class=" text-sm ml-1">Personalize your website's design and layout</p>
             </div>
             <div class="flex  items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-teal-600">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-white">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
               </svg>              
               <p class=" text-sm ml-1">Create a consistent brand experience</p>
             </div>
             <div class="flex  items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-teal-600">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-white">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
               </svg>              
               <p class=" text-sm ml-1">Optimize for better performance and responsiveness</p>
@@ -224,10 +226,10 @@
           </div>
 
           <!-- Service 3: Website Template Design -->
-          <div class="bg-teal-900 text-white rounded-lg shadow-lg p-6 service animate__animated">
+          <div class="bg-gray-900 text-white rounded-lg shadow-lg p-6 service animate__animated">
             <div class="flex items-center mb-4">
               <div class="mr-4">
-                <svg class="w-10 h-10 text-teal-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <svg class="w-10 h-10 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                   <path d="M10 2a8 8 0 100 16 8 8 0 000-16zM8 18a6 6 0 015.32-5.94 6.5 6.5 0 10-5.32 5.94z" />
                 </svg>
               </div>
@@ -235,19 +237,19 @@
             </div>
             <p class="text-sm mb-4">Our talented designers can create stunning and functional website templates that align with your business goals. Whether you need a template for a blog, e-commerce site, or portfolio, we'll deliver a visually captivating design that resonates with your target audience.</p>
             <div class="flex  items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-teal-600">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-white">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
               </svg>              
               <p class=" text-sm ml-1">Showcase your content in a visually appealing way</p>
             </div>
             <div class="flex  items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-teal-600">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-white">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
               </svg>            
               <p class=" text-sm ml-1">Create a memorable user experience</p>
             </div>
             <div class="flex  items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-teal-600">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-white">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
               </svg>              
               <p class=" text-sm ml-1">Responsive design for optimal viewing on all devices</p>
@@ -258,7 +260,33 @@
       </div>
     </section>
 
-    <footer class="bg-teal-800 text-neutral-300 py-4">
+    <section class="py-10 bg-gray-200" id="Plugins">
+      <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Plugins</h2>
+      <div class="flex flex-wrap">
+        <div class="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
+          <div class="flex px-1 md:px-0 lg:py-12">
+            <img src="/public/userSync.png"
+              class="z-[10] w-full rounded-lg shadow-lg dark:shadow-black/20 lg:ml-[50px]" alt="image" />
+          </div>
+        </div>
+  
+        <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
+          <div
+            class="flex h-full items-center rounded-lg bg-gray-800 p-6 text-center text-white lg:pl-12 lg:text-left">
+            <div class="lg:pl-12">
+              <h2 class="mb-8 text-3xl font-bold">Import and Export users via csv</h2>
+              <p class="mb-8 pb-2 lg:pb-0">
+                Imagine you have a WordPress website and you need to manage a large number of users efficiently. However, manually adding or updating each user can be time-consuming and tedious. This is where the "User Bulk Management" plugin comes to the rescue!
+                The plugin provides a solution to streamline the process of importing, updating, and exporting users using CSV files. CSV stands for "Comma-Separated Values," which is a common file format that stores tabular data in a plain text format.
+              </p>
+              <h4><a href="/PluginPages/usersync.html" class="font-bold text-white">Learn More |</a></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 text-neutral-300 py-4">
       <div class="container mx-auto px-4">
         <div class="flex items-center justify-between">
           <div>
