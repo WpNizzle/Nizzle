@@ -25,16 +25,16 @@ function handleToggle() {
     expandedMenu.classList.add("hidden");
   }
 
-  document.getElementById("viewProductsBtn").addEventListener("click", function(event) {
-    event.preventDefault();
-    const targetSection = document.getElementById("Discover");
-    targetSection.scrollIntoView({ behavior: "smooth" });
-  });
+//   document.getElementById("viewProductsBtn").addEventListener("click", function(event) {
+//     event.preventDefault();
+//     const targetSection = document.getElementById("Discover");
+//     targetSection.scrollIntoView({ behavior: "smooth" });
+//   });
 
-  window.addEventListener('load', function () {
-    const preloader = document.getElementById('preloader');
-    preloader.classList.add('hide');
-  });
+//   window.addEventListener('load', function () {
+//     const preloader = document.getElementById('preloader');
+//     preloader.classList.add('hide');
+//   });
 
   const services = document.querySelectorAll('.service');
   const Discover = document.querySelectorAll('.Discover');
