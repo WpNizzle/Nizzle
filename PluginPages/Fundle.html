@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/public/Nizzle.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UserSync - import export users via csv wp plugin</title>
+  
+  <!-- Add meta tags for SEO -->
+  <meta name="description" content="Nizzle offers high-quality WordPress plugins, themes, and templates for your website needs." />
+  <meta name="keywords" content="Nizzle, WordPress, plugins, themes, website templates, development" />
+  
+  <meta property="og:title" content="Nizzle - WordPress Plugins, Themes, and Templates" />
+  <meta property="og:description" content="Nizzle offers high-quality WordPress solutions to meet your needs." />
+  <meta property="og:image" content="/public/og.png" />
+  <meta name="twitter:title" content="Nizzle - WordPress Plugins, Themes, and Templates" />
+  <meta name="twitter:description" content="Nizzle offers high-quality WordPress solutions to meet your needs." />
+  <meta name="twitter:image" content="/public/og.png" />
+  <meta property="og:url" content="https://wpnizzle.com/" />  
+
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="../src//input.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="md:relative md:min-h-screen">
+    <!-- Navbar -->
+    <nav class="fixed top-0 z-50 left-0 right-0 h-16 bg-teal-700 shadow-md text-white flex items-center justify-between px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between md:justify-center w-full items-center">
+        <div class="w-full text-center">
+            <a href="/index.html#Home" class="font-bold text-lg">
+            NIZZLE
+            </a>
+        </div>
+        
+        <div class="hidden lg:flex w-full">
+            <div class="flex justify-evenly w-full">
+            <div>
+                <a href="/index.html#Home" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white  hover:bg-teal-500">
+                Home
+                </a>
+                <a href="/index.html#Products" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white  hover:bg-teal-500">
+                Products
+                </a>
+                <!-- <a href="#Themes" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600">
+                Themes
+                </a> -->
+                <!-- <a href="#Templates" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600">
+                Templates
+                </a> -->
+            </div>
+<!--       
+            <a href="#Contact" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600">
+                Contact
+            </a> -->
+
+            </div>
+        </div>
+        </div>
+        
+        <div class="flex items-center justify-end">
+        <button class="lg:hidden text-white focus:outline-none" onclick="handleToggle()">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+        <div id="expandedMenu" class="hidden lg:flex lg:items-center absolute top-0 right-0 bg-teal-700 h-screen w-full lg:h-auto lg:w-auto lg:relative opacity-0 transition ease-in duration-200">
+            <button class="lg:hidden text-white focus:outline-none ml-auto" onclick="handleToggle()">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+            </button>
+            <div class="lg:flex-grow">
+            <a href="/index.html#Home" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white  hover:bg-teal-500" onclick="handleLinkClick()">Home</a>
+            <!-- <a href="#About" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600" onclick="handleLinkClick()">About</a> -->
+            <a href="/index.html#Products" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white  hover:bg-teal-500" onclick="handleLinkClick()">Products</a>
+            <!-- <a href="#Contact" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600" onclick="handleLinkClick()">Contact</a> -->
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!-- end of navbar --> 
+
+    <section class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
+        <div class="max-w-3xl px-8 py-16 bg-white rounded-lg shadow-md">
+          <h1 class="md:text-4xl text-2xl font-semibold mb-4">Elevate Fundraising Efforts with Fundle</h1>
+          <p class="text-gray-600 mb-8">Empower your fundraising initiatives using our powerful PayPal Donations button plugin. Seamlessly integrate a donation button on your WordPress website, enhance user engagement, and achieve your fundraising goals.</p>
+      
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="p-6 bg-blue-100 rounded-lg">
+              <h2 class="text-xl font-semibold mb-2">Simplified Fundraising</h2>
+              <p class="text-gray-600">
+                Say goodbye to complicated fundraising setups. Fundle enables you to effortlessly integrate a secure and user-friendly PayPal donation button to your website, encouraging seamless contributions from supporters.
+              </p>
+            </div>
+            <div class="p-6 bg-green-100 rounded-lg">
+              <h2 class="text-xl font-semibold mb-2">Customization and Goal Setting</h2>
+              <p class="text-gray-600">Tailor your fundraising journey with ease. Fundle empowers you to customize button styles, set donation goals, and provide a transparent experience to your supporters, enhancing their trust in your cause.</p>
+            </div>
+          </div>
+      
+          <div class="grid grid-cols-1">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h2 class="text-xl font-semibold mb-4">Why Choose Fundle - PayPal Donation Button?</h2>
+              <p class="text-gray-700 mb-4">Unlock the potential of Fundle and revolutionize your fundraising approach. Experience these invaluable benefits:</p>
+      
+              <ul class="list-disc list-inside text-gray-700 text-base">
+                <li class="mb-2">Seamless Integration: Easily embed a PayPal donation button on your WordPress website without hassle.</li>
+                <li class="mb-2">Enhanced User Engagement: Engage supporters with a convenient, secure, and user-friendly donation process.</li>
+                <li class="mb-2">Customizable Styles: Tailor the button to match your website's design and branding, creating a cohesive experience.</li>
+                <li class="mb-2">Goal-Oriented Fundraising: Set donation goals and inspire supporters to help your cause reach new heights.</li>
+                <li class="mb-2">Secure Transactions: Ensure donors' peace of mind with PayPal's trusted and secure payment system.</li>
+                <li class="mb-2">Transparent Experience: Provide clear and honest donation information, fostering trust and loyalty.</li>
+                <li class="mb-2">Efficient Management: Monitor and track donations seamlessly to gauge your fundraising success.</li>
+                <li class="mb-2">Responsive Support: Access dedicated assistance to address any queries or concerns promptly.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- <div class="mt-8">
+            <h2 class="text-2xl font-semibold mb-4">Get Started Today</h2>
+            <p class="text-gray-600">Ready to supercharge your WordPress site? Download our plugin now and start enjoying its benefits.</p>
+            <a href="#" class="inline-block mt-4 px-6 py-3 bg-teal-500 text-white rounded-lg hover:bg-teal-600 transition duration-300">Download Now</a>
+          </div> -->
+        </div>
+      </section>
+      
+      
+    
+    
+
+    <footer class="bg-gray-600 md:absolute md:bottom-0 md:right-0 md:left-0 text-neutral-300 py-4">
+        <div class="container mx-auto px-4">
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="text-sm">&copy; WPNizzle</span>
+              <span class="text-sm ml-2" id="current-year"></span>
+            </div>
+            <div>
+              <ul class="flex space-x-4">
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeAySWaGqmVU1Qkat1tGzzp-aweiImgmM5Az6_LZgV9i_9PWA/viewform?usp=sf_link" class="text-neutral-300 hover:text-neutral-200">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
+      
+    
+    <script src="../src/Nizzle.js"></script>
+</body>
+</html>

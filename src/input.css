@@ -53,5 +53,21 @@
   .preloader.hide {
     display: none;
   }
+
+  /* Add this to your existing CSS */
+@keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .product-card {
+    animation: slideIn 1s ease-in-out;
+  }
   
   
