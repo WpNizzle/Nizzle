@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-300">
+<body>
   <!-- <div id="preloader" class="preloader">
     <div class="flex flex-col bg-white w-full h-full justify-center items-center">
       <div class="loader"></div>
@@ -33,7 +33,7 @@
   <section class="">
 
     <!-- Navbar -->
-    <nav class="fixed top-0 z-50 left-0 right-0 h-16 bg-teal-700 shadow-md text-white flex items-center justify-between px-4 sm:px-6 lg:px-8">
+    <nav class="fixed top-0 z-50 left-0 right-0 h-16 bg-gradient-to-r from-sky-500 to-teal-600 shadow-md text-white flex items-center justify-between px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between md:justify-center w-full items-center">
         <div class="w-full text-center">
             <a href="/index.html#Home" class="font-bold text-lg">
@@ -57,7 +57,7 @@
                 Templates
                 </a> -->
             </div>
-<!--       
+            <!--       
             <a href="#Contact" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600">
                 Contact
             </a> -->
@@ -72,7 +72,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
         </button>
-        <div id="expandedMenu" class="hidden lg:flex lg:items-center absolute top-0 right-0 bg-teal-700 h-screen w-full lg:h-auto lg:w-auto lg:relative opacity-0 transition ease-in duration-200">
+        <div id="expandedMenu" class="hidden lg:flex lg:items-center absolute top-0 right-0 bg-gradient-to-r from-sky-500 to-teal-600 h-screen w-full lg:h-auto lg:w-auto lg:relative opacity-0 transition ease-in duration-200">
             <button class="lg:hidden text-white focus:outline-none ml-auto" onclick="handleToggle()">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -89,83 +89,76 @@
     </nav>
     <!-- end of navbar --> 
 
-    <section class="bg-gray-200 text-gray-800 py-16 min-h-screen flex justify-center items-center" id="Home">
+    <section class="bg-gradient-to-r from-sky-500 to-teal-500 text-gray-800 py-16 min-h-screen flex justify-center items-center" id="Home">
         <svg xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 left-0 w-full -mt-16" viewBox="0 0 1440 320">
           <path fill="rgb(156 163 175 / var(--tw-bg-opacity))" fill-opacity="0.3" d="M0,96L40,112C80,128,160,160,240,165.3C320,171,400,149,480,133.3C560,117,640,107,720,101.3C800,96,880,96,960,90.7C1040,85,1120,75,1200,74.7C1280,75,1360,85,1400,90.7L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
         </svg>
         <div class="container flex flex-col md:flex-row items-center justify-center mx-auto px-4">
           <div class="text-center animate-fade-in">
-            <h1 class="text-2xl font-extrabold text-teal-700 mb-6">ELEVATE YOUR BUSINESS</h1>
+            <h1 class="text-2xl font-extrabold text-white mb-6">ELEVATE YOUR BUSINESS</h1>
             <h2 class="text-xl md:text-5xl xl:text-6xl font-bold mb-3">Boost Your Online Presence with</h2>
             <h2 class="text-xl md:text-5xl xl:text-6xl font-bold">Cutting-Edge WordPress Solutions</h2>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mt-10 mx-auto text-teal-700 transform rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mt-10 mx-auto text-white transform rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
             </svg>
             <!-- <a href="#Discover" class="mt-6 inline-block py-3 px-8 text-lg font-semibold text-white bg-gray-600 hover:bg-gray-700 rounded-md" id="viewProductsBtn">Discover Our Services</a> -->
           </div>
         </div>
     </section>
+      
     
-    <div class="container bg-gray-300 py-3 md:py-6 mx-auto md:px-6" id="Discover">
-      <section class="md:mb-12 mb-2">
-        <div class="container mx-auto text-center lg:text-left xl:px-32">
-          <div class="grid items-center lg:grid-cols-2">
-            <div class="hidden md:flex">
-              <img src="https://images.unsplash.com/photo-1630487656049-6db93a53a7e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTk0fHxtZWV0aW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"
-                class="w-full rounded-lg shadow-lg dark:shadow-black/20" alt="image" />
+    <div class="grid grid-cols-1 bg-white">
+        <div class="container mx-auto text-center">
+            <div class="my-20">
+                <h2 class="text-3xl font-semibold my-6">Our Value Proposition</h2>
+                <p class="text-gray-600 max-w-lg mx-auto mb-8">
+                    Discover how our products empower you to solve common problems and achieve outstanding results for your business.
+                </p>                
             </div>
-            <div class="mb-12 lg:mb-0">
-              <div
-                class="relative z-[1] block rounded-lg bg-[hsla(0,0%,9%,1)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[30px] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 md:px-12 lg:-ml-14">
-                <h2 class="mb-8 text-3xl text-white font-bold">Discover Nizzle</h2>
-                <p class="mb-8 pb-2 text-neutral-300 dark:text-neutral-200 lg:pb-0">
-                    We build simple lightweight Versatile WordPress plugins and themes that are easy to use and help businesses or entrepreneurs enhance their online experience.
-                </p>
-    
-                <div class="mx-auto mb-8 flex flex-col md:flex-row md:justify-around lg:justify-between">
-                  <p class="mx-auto mb-4 flex text-white items-center md:mx-0 md:mb-2 lg:mb-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                      stroke="currentColor" class="mr-2 h-5 w-5">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    Simple
-                  </p>
-    
-                  <p class="mx-auto mb-4 flex text-white items-center md:mx-0 md:mb-2 lg:mb-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                      stroke="currentColor" class="mr-2 h-5 w-5">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    Lightweight
-                  </p>
-    
-                  <p class="mx-auto mb-2 flex text-white items-center md:mx-0 lg:mb-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                      stroke="currentColor" class="mr-2 h-5 w-5">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    Versatile
-                  </p>
+            
+            <div class="my-6 grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="bg-white p-6 rounded-lg flex flex-col items-center justify-center">
+                  <svg class="h-12 w-12 text-teal-800 mb-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                  </svg>
+                  <h5 class="text-center font-bold text-lg text-teal-800">Innovation</h5>
+                  <p class="text-gray-600">We're committed to exploring new possibilities.</p>
                 </div>
-    
-                <p class="mb-0 text-neutral-300 dark:text-neutral-200">
-                    At Nizzle, we understand the challenges you face in your online ventures. That's why we are here to provide effective problem-solving solutions. Our team of experts is dedicated to addressing your unique needs and delivering outstanding results. We take pride in our ability to simplify complex processes and find innovative solutions to overcome obstacles. With our meticulous attention to detail and thorough testing, we ensure that our solutions are reliable and efficient. We strive to create user-friendly experiences that not only meet your requirements but also exceed your expectations. Trust Nizzle to be your partner in solving your online challenges and unlocking your digital success.
-                </p>
-              </div>
+                <div class="bg-white p-6 rounded-lg flex flex-col items-center justify-center">
+                  <svg class="h-12 w-12 text-teal-800 mb-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                  </svg>
+                  <h5 class="text-center font-bold text-lg text-teal-800">User-Centric</h5>
+                  <p class="text-gray-600">Our users' needs are at the heart of everything we create.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg flex flex-col items-center justify-center">
+                  <svg class="h-12 w-12 text-teal-800 mb-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                  <h5 class="text-center font-bold text-lg text-teal-800">Quality</h5>
+                  <p class="text-gray-600">We take pride in delivering high-quality, reliable solutions.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg flex flex-col items-center justify-center">
+                    <svg class="h-12 w-12 text-teal-800 mb-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="8" r="7"></circle>
+                      <path d="M8.21 13.89L7 23L12 20L17 23L15.79 13.88"></path>
+                    </svg>
+                    <h5 class="text-center font-bold text-lg text-teal-800">Collaboration</h5>
+                    <p class="text-gray-600">Working together to achieve greatness through teamwork and shared goals.</p>
+                </div>
+                  
             </div>
-          </div>
+              
         </div>
-      </section>
     </div>
 
-    <section class="py-10 bg-gray-300" id="Products">
-      <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Products</h2>  
+    <section class="py-10" id="Products">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Products</h2>  
 
-      <div class="container mx-auto py-10">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="container mx-auto py-10 px-3  bg-gradient-to-l from-sky-500 to-teal-600">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="Plugins">
             <!-- Plugin 1 -->
             <div class="product-card bg-white p-6 rounded-lg shadow-md">
                 <img class="mx-auto mb-4 h-48" src="/public/fundle.jpg" alt="Plugin 1">
@@ -196,29 +189,115 @@
                 <a href="/PluginPages/UserCol.html" class="text-blue-500 hover:underline">Learn More</a>
             </div>
         </div>
-    </div>
-    
-    
-      
-    </section>     
+        </div>
 
-    <footer class="bg-gray-600 text-neutral-300 py-4">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-col md:flex-row items-center justify-between">
-          <div class="text-sm flex">
-            <span class="text-sm">&copy; WPNizzle</span>
-            <span class="text-sm ml-2" id="current-year"></span>    
-            <h3 class="ml-2">All rights reserved.</h3>     
-          </div>
-          <div class="flex">
-            <!-- <ul class="flex space-x-4">
-              <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeAySWaGqmVU1Qkat1tGzzp-aweiImgmM5Az6_LZgV9i_9PWA/viewform?usp=sf_link" class="text-neutral-300 hover:text-neutral-200">Contact</a></li>
-            </ul> -->
-            <h3 class="ml-2 text-center text-sm py-3 md:py-0">Simple Lightweight wordpress products.</h3>
+    </section>
+
+    <section class="py-16 bg-gradient-to-l from-sky-500 to-teal-600" id="Testimonial">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-semibold mb-4">What Our Clients Say</h2>
+          <p class="text-gray-600 max-w-lg mx-auto mb-8">Discover how our products have made a positive impact on our clients' businesses.</p>
+          
+          <div class="grid gap-12 text-center md:grid-cols-2 py-10">
+            <!--First Testimonial-->
+            <div class="mb-6 md:mb-0">
+              <div class="mb-6 flex justify-center">
+                <img
+                  src="https://i.pinimg.com/236x/fc/b7/8d/fcb78d70c3e658e6357e55e7fa9a4c3b.jpg"
+                  class="w-20 h-20 rounded-full shadow-lg dark:shadow-black/30" />
+              </div>
+              <blockquote class="text-gray-700 italic mb-4">
+                "Using Fundle has been a game-changer for us. The customization options for the button styles allowed us to align the plugin with our branding and fundraising objectives."
+              </blockquote>              
+              <p class="italic">- Ann Moira</p>
+            </div>
+        
+            <!--Second Testimonial-->
+            <div class="mb-0">
+              <div class="mb-6 flex justify-center">
+                <img
+                  src="https://i.pinimg.com/236x/15/77/ad/1577ad9f2f29fbff8efa5fec9c631ad5.jpg"
+                  class="w-20 h-20 rounded-full shadow-lg dark:shadow-black/30" />
+              </div>
+              <blockquote class="text-gray-700 italic mb-4">
+                "The support provided by the support team is exceptional. Any time I had an issue, their team was quick to assist and resolve the problem. Truly impressed!"
+              </blockquote>
+              <p class="italic">- Hussein Duncan</p>
+            </div>
           </div>
         </div>
-      </div>
-  </footer>
+    </section>
+
+    <section class="py-16 bg-gray-100" id="RecentBlogs">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-semibold text-center mb-6">Latest Blog Posts</h2>
+          <p class="text-gray-600 max-w-lg mx-auto text-center mb-10">Stay informed with our latest insights, tips, and news in the world of WordPress and online business.</p>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+              <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d29yZHByZXNzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Blog Post 1" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-teal-600 mb-2">Installing and Setting Up WordPress for Your Website</h3>
+                <p class="text-gray-600 mb-4">
+                    Are you ready to create your own website using WordPress? This powerful content management system offers a user-friendly interface and endless customization options.
+                </p>
+                <a href="https://dev.to/lewisushindi/a-friendly-guide-installing-and-setting-up-wordpress-for-your-website-48bj" class="text-teal-500 hover:underline">Read More</a>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+              <img src="https://images.unsplash.com/photo-1560472355-a3b4bcfe790c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdvcmRwcmVzc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Blog Post 2" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-teal-600 mb-2">Restricting Custom Post Types to the Site Administrator Role in WordPress.</h3>
+                <p class="text-gray-600 mb-4">
+                    In WordPress, custom post types are a powerful feature that allows you to create specialized content beyond regular posts and pages.
+                </p>
+                <a href="https://dev.to/lewisushindi/restricting-custom-post-types-to-the-site-administrator-role-in-wordpress-3919" class="text-teal-500 hover:underline">Read More</a>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+              <img src="https://images.unsplash.com/photo-1562577309-2592ab84b1bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2VvfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Blog Post 3" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-teal-600 mb-2">Optimizing WordPress for SEO: Best Practices and Tips</h3>
+                <p class="text-gray-600 mb-4">For WordPress users, optimizing their websites for SEO is a task that can significantly impact their online visibility, organic traffic, and overall digital presence.</p>
+                <a href="https://dev.to/lewisushindi/optimizing-wordpress-for-seo-best-practices-and-tips-17ho" class="text-teal-500 hover:underline">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <footer class="bg-gradient-to-r from-sky-500 to-teal-600 text-white py-10 px-2">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 place-items-center">
+            <div class="mb-6 md:mb-0">
+                <h3 class="text-center md:text-xl font-semibold mb-4">About wpNizzle</h3>
+                <p class="text-gray-100">Discover high-quality WordPress plugins, themes, and solutions designed to elevate your online business to new heights. Join us in shaping the future of WordPress.</p>
+            </div>
+            <div class="mb-6 md:mb-0">
+                <h3 class="md:text-xl font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                <li><a href="/index.html#Products" class="hover:underline">Products</a></li>
+                <!-- <li><a href="/themes" class="hover:underline">Themes</a></li> -->
+                <li><a href="/index.html#Plugins" class="hover:underline">Plugins</a></li>              
+                <!-- <li><a href="/contact" class="hover:underline">Contact Us</a></li> -->
+                <li><a href="/index.html#RecentBlogs" class="hover:underline">Recent Blogs</a></li>
+                </ul>
+            </div>
+            <div class="">
+                <!-- <h3 class="text-xl font-semibold mb-4">Useful Resources</h3> -->
+                <ul class="space-y-2">
+                <!-- <li><a href="/documentation" class="hover:underline">Documentation</a></li> -->
+                <!-- <li><a href="/support" class="hover:underline">Support Center</a></li> -->
+                <!-- <li><a href="/demo" class="hover:underline">Live Demos</a></li> -->
+                <!-- <li><a href="/index.html#RecentBlogs" class="hover:underline">Recent Blogs</a></li> -->
+                <!-- <li><a href="/pricing" class="hover:underline">Pricing</a></li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="mt-10 border-t border-white py-6 text-center">
+          <p>&copy; 2023 wpNizzle. All rights reserved.</p>
+        </div>
+    </footer>
+      
 
 <script>
   const currentYear = new Date().getFullYear();
