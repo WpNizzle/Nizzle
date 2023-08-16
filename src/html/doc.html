@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/public/logo.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Documentation - wpnizzle.com</title>
+        
+        <!-- Add meta tags for SEO -->
+        <meta name="description" content="Discover high-quality WordPress plugins and themes at wpnizzle.com, designed to elevate your online business to new heights." />
+        <meta name="keywords" content="WordPress products, elevate online business, wpnizzle, plugins, themes, website templates, development" />
+        
+        <meta property="og:title" content="WordPress Products to Elevate Your Online Business - wpnizzle.com" />
+        <meta property="og:description" content="Discover high-quality WordPress solutions at wpnizzle.com, designed to meet the needs of your online business." />
+        <meta property="og:image" content="/public/og.png" />
+        <meta name="twitter:title" content="wpnizzle - WordPress Plugins, Themes, and Templates for Your Online Business" />
+        <meta name="twitter:description" content="Discover high-quality WordPress solutions at wpnizzle.com, designed to meet the needs of your online business." />
+        <meta name="twitter:image" content="/public/og.png" />
+        <meta property="og:url" content="https://wpnizzle.com/" />  
+      
+        <link href="/dist/output.css" rel="stylesheet">
+        <link rel="stylesheet" href="/src/input.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+      </head>
+<body class="bg-gray-100 font-sans">
+  <!-- Navbar -->
+  <nav class="fixed top-0 z-50 left-0 right-0 h-16 bg-gradient-to-r from-sky-500 to-teal-600 shadow-md text-white flex items-center justify-between px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between md:justify-center w-full items-center">
+    <div class="w-full text-center">
+        <a href="/index.html#Home" class="font-bold text-lg">
+        NIZZLE
+        </a>
+    </div>
+    
+    <div class="hidden lg:flex w-full">
+        <div class="flex justify-evenly w-full">
+        <div>
+            <a href="/index.html#Home" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white  hover:bg-teal-800">
+            Home
+            </a>
+            <a href="/index.html#Products" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white  hover:bg-teal-900">
+            Products
+            </a>
+            <a href="/src/html/support.html" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white  hover:bg-teal-900">
+            Support
+            </a>                
+            <!-- <a href="#Themes" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600">
+            Themes
+            </a> -->
+            <!-- <a href="#Templates" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600">
+            Templates
+            </a> -->
+        </div>
+        <a href="/src/html/contact.html" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white  hover:bg-teal-900">
+            Contact
+        </a>
+
+        </div>
+    </div>
+    </div>
+    
+    <div class="flex items-center justify-end">
+    <button class="lg:hidden text-white focus:outline-none" onclick="handleToggle()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+    </button>
+    <div id="expandedMenu" class="hidden lg:flex lg:items-center absolute top-0 right-0 bg-gradient-to-r from-sky-500 to-teal-600 h-screen w-full lg:h-auto lg:w-auto lg:relative opacity-0 transition ease-in duration-200">
+        <button class="lg:hidden text-white focus:outline-none ml-auto" onclick="handleToggle()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+        </button>
+        <div class="lg:flex-grow">
+        <a href="/index.html#Home" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white  hover:bg-teal-900" onclick="handleLinkClick()">Home</a>
+        <!-- <a href="#About" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600" onclick="handleLinkClick()">About</a> -->
+        <a href="/index.html#Products" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white  hover:bg-teal-900" onclick="handleLinkClick()">Products</a>
+        <a href="/src/html/support.html" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white  hover:bg-teal-900" onclick="handleLinkClick()">Support</a>
+        <a href="/src/html/contact.html" class="block py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-white hover:bg-teal-600" onclick="handleLinkClick()">Contact</a>
+        </div>
+    </div>
+    </div>
+</nav>
+<!-- end of navbar --> 
+
+  <div class="container mx-auto p-4 mt-4 pt-20 min-h-screen">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <!-- Sidebar -->
+      <nav class="md:col-span-1 bg-white p-4 rounded shadow-md">
+        <h2 class="text-lg font-semibold mb-4">Documentation Sections</h2>
+        <ul class="space-y-2">
+          <li>
+            <a href="#introduction" class="text-teal-600 hover:text-teal-800 transition duration-300">
+              Introduction
+            </a>
+          </li>
+          <li>
+            <a href="#faqs" class="text-teal-600 hover:text-teal-800 transition duration-300">
+              Frequently Asked Questions (FAQs)
+            </a>
+          </li>
+          <li>
+            <a href="#troubleshooting" class="text-teal-600 hover:text-teal-800 transition duration-300">
+              Troubleshooting and Problem Solving
+            </a>
+          </li>
+          <li>
+            <a href="#contact-support" class="text-teal-600 hover:text-teal-800 transition duration-300">
+              Contact and Support
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Main Content -->
+      <div class="md:col-span-2 bg-white p-4 rounded shadow-md">
+        <section id="introduction" class="my-6">
+          <h2 class="text-xl font-semibold mb-2 text-teal-600">Introduction</h2>
+          <p>Welcome to our documentation! Here, you'll find comprehensive guides and resources to help you make the most out of our products and services. Learn how our offerings can benefit you, solve your challenges, and streamline your workflows.</p>
+        </section>
+        <section id="faqs" class="my-6">
+            <h2 class="text-xl font-semibold mb-2 text-teal-600">Frequently Asked Questions (FAQs)</h2>
+            <p>Find quick answers to commonly asked questions. Our FAQs section addresses common concerns, helping you troubleshoot issues and make the most of your experience with us.</p>
+          
+            <div class="mt-4">
+              <h3 class="text-lg font-semibold mb-2">Q: Can you create custom plugins tailored to my business needs?</h3>
+              <p>A: Absolutely! We offer custom plugin development services to address specific business requirements. Our team will work closely with you to understand your needs and deliver a solution that aligns perfectly with your goals.</p>
+            </div>
+          
+            <div class="mt-4">
+              <h3 class="text-lg font-semibold mb-2">Q: Is there a free support option for the custom plugins you develop?</h3>
+              <p>A: Yes, we provide free basic support for a limited period after delivering a custom plugin. This includes assistance with initial setup and addressing any minor issues. For extended support, consider our premium support plans that offer more comprehensive coverage and faster response times.</p>
+            </div>
+          
+            <div class="mt-4">
+              <h3 class="text-lg font-semibold mb-2">Q: Can I integrate your plugins with my existing business systems?</h3>
+              <p>A: Absolutely. Our plugins are designed to be versatile and integrate seamlessly with a variety of systems. We provide comprehensive documentation to guide you through the integration process, ensuring a smooth and efficient setup.</p>
+            </div>
+          
+            <div class="mt-4">
+              <h3 class="text-lg font-semibold mb-2">Q: How can I request new features or enhancements for your products?</h3>
+              <p>A: We value your feedback and actively encourage feature requests. Feel free to reach out to our support team with your suggestions. Our development team reviews these requests, and if feasible, we may include the requested features in future updates.</p>
+            </div>
+        </section>
+          
+        <section id="troubleshooting" class="my-6">
+            <h2 class="text-xl font-semibold mb-2 text-teal-600">Troubleshooting and Problem Solving</h2>
+            <p>Encountering difficulties? This section provides troubleshooting tips for common issues. Discover solutions to error messages, common pitfalls, and workarounds to ensure smooth usage.</p>
+          
+            <div class="mt-4">
+              <h3 class="text-lg font-semibold mb-2">Error Message: "Plugin Not Activated"</h3>
+              <p>If you receive this error message, it means the plugin is not activated. Please navigate to the WordPress dashboard, go to the "Plugins" section, and ensure that the plugin is activated. If the issue persists, try deactivating and reactivating the plugin, and clear your browser cache.</p>
+            </div>
+          
+            <div class="mt-4">
+              <h3 class="text-lg font-semibold mb-2">Issue: Slow Performance</h3>
+              <p>If you notice slow performance, first ensure that your website and server are properly optimized. Additionally, check if other plugins are causing conflicts. Deactivate non-essential plugins and see if the performance improves. You can also optimize images and implement caching mechanisms to boost speed.</p>
+            </div>
+          
+            <div class="mt-4">
+              <h3 class="text-lg font-semibold mb-2">Problem: Broken Styling After Update</h3>
+              <p>If your website's styling breaks after updating the plugin, it might be due to a conflict with your theme or other plugins. Try disabling other plugins one by one to identify the conflicting one. If the issue persists, contact our support team with details about your setup for further assistance.</p>
+            </div>
+          
+            <div class="mt-4">
+              <h3 class="text-lg font-semibold mb-2">Error: 404 Page Not Found on Plugin Page</h3>
+              <p>If you encounter a 404 page not found error when accessing a plugin's settings page, ensure that the plugin is properly installed. If the issue persists, it might be a permalink issue. Navigate to "Settings" > "Permalinks" and click "Save Changes" to refresh your permalinks and resolve the issue.</p>
+            </div>
+          
+            <!-- Add more troubleshooting tips for common issues -->
+          
+          </section>
+          
+        
+        <section id="contact-support" class="my-6">
+            <h2 class="text-xl font-semibold mb-2 text-teal-600">Contact and Support</h2>
+            <p>If you're in need of assistance, our dedicated support team is ready to assist you. We offer multiple ways to get in touch, each tailored to specific scenarios to ensure you receive the most relevant help:</p>
+            
+            <h3 class="text-lg font-semibold mt-4">Contact Form</h3>
+            <p>Our <strong>Contact Form</strong> is the perfect way to reach us for general inquiries, feedback, or any questions you may have about our products or services. Fill in your name, email, and message, and we'll respond as quickly as possible. This form is ideal for non-urgent matters and general information requests.</p>
+          
+            <h3 class="text-lg font-semibold mt-4">Support Form</h3>
+            <p>If you encounter technical issues or require assistance with a specific problem related to our products, please use our dedicated <strong>Support Form</strong>. This form is designed to collect detailed information about your issue, enabling our team to provide accurate and efficient solutions. Include your name, email, and a comprehensive description of the problem you're facing, and we'll address it promptly.</p>
+          
+            <p>If you're a user of our software or plugins and you encounter difficulties or have suggestions, our <strong>GitHub repositories</strong> are open for issue submissions. Feel free to open an issue on the relevant repository, detailing the problem you're experiencing or suggesting improvements. This collaborative approach helps us track and resolve issues effectively.</p>
+          
+            <p>Our commitment to you is to provide prompt responses within <strong>24 hours</strong> on business days. We understand the importance of timely assistance, and our support team is dedicated to ensuring your experience with our products is smooth and satisfying. Please keep in mind that our response time may vary based on the complexity of the issue and the volume of incoming requests.</p>
+        </section>
+          
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-gradient-to-r from-sky-500 to-teal-600 text-white py-10 px-2">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 place-items-center">
+        <div class="mb-6 md:mb-0">
+            <h3 class="text-center md:text-xl font-semibold mb-4">About wpNizzle</h3>
+            <p class="text-gray-100">Discover high-quality WordPress plugins, themes, and solutions designed to elevate your online business to new heights. Join us in shaping the future of WordPress.</p>
+        </div>
+        <div class="mb-6 md:mb-0">
+            <h3 class="md:text-xl font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2 flex flex-col justify-center items-center">
+                <li><a href="/index.html#Plugins" class="hover:underline">Plugins</a></li> 
+                <li><a href="/index.html#Products" class="hover:underline">Products</a></li>
+                <!-- <li><a href="/themes" class="hover:underline">Themes</a></li> -->                             
+                <li><a href="/src/html/contact.html" class="hover:underline">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="">
+            <h3 class="text-xl font-semibold mb-4">Useful Resources</h3>
+            <ul class="space-y-2 flex flex-col justify-center items-center">
+                <li><a href="/index.html#RecentBlogs" class="hover:underline">Recent Blogs</a></li>
+                <li><a href="/src/html/doc.html" class="hover:underline">Documentation</a></li>
+                <li><a href="/src/html/support.html" class="hover:underline">Support Center</a></li>
+                <!-- <li><a href="/demo" class="hover:underline">Live Demos</a></li> -->                
+                <!-- <li><a href="/pricing" class="hover:underline">Pricing</a></li> -->
+            </ul>
+        </div>
+    </div>
+    <div class="mt-10 border-t border-white py-6 text-center">
+      <p>&copy; 2023 wpNizzle. All rights reserved.</p>
+    </div>
+</footer>
+  
+
+<script>
+const currentYear = new Date().getFullYear();
+document.getElementById('current-year').textContent = currentYear;
+</script>
+
+</section>
+   
+<script src="/src/Nizzle.js"></script>
+</body>
+</html>
