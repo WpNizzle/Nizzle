@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/public/logo.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>User Column manager - Add Custom columns to your WordPress user lists</title>
+        <title>WordPress Products to Elevate Your Online Business - wpnizzle.com</title>
         
         <!-- Add meta tags for SEO -->
         <meta name="description" content="Discover high-quality WordPress plugins and themes at wpnizzle.com, designed to elevate your online business to new heights." />
@@ -22,8 +22,9 @@
         <link rel="stylesheet" href="/src/input.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <script src="https://cdn.tailwindcss.com"></script>
-    </head>
-<body class="bg-gray-100">
+      </head>
+<body>
+
     <!-- Navbar -->
     <nav class="fixed top-0 z-50 left-0 right-0 h-16 bg-gradient-to-r from-sky-500 to-teal-600 shadow-md text-white flex items-center justify-between px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between md:justify-center w-full items-center">
@@ -83,15 +84,26 @@
         </div>
     </nav>
     <!-- end of navbar -->
-
-  <div class="container mx-auto p-8 pt-20 min-h-screen">
-    <h1 class="text-3xl font-semibold mb-4">Contact Messages</h1>
-    <div id="messages-list" class="bg-white p-4 rounded-lg shadow-md">
-      <!-- Display messages here using JavaScript -->
+    
+    <div class="min-h-screen bg-white py-20">
+        <div class="container mx-auto p-4">
+            <h1 class="text-3xl font-semibold mb-6">Subscribers List</h1>
+            <ul id="subscribers-list" class="bg-white p-4 shadow-md rounded-lg">
+                <!-- Subscribers will be populated here using JavaScript -->
+            </ul>
+        </div>
     </div>
-  </div>
+    
 
-  <footer class="bg-gradient-to-r from-sky-500 to-teal-600 text-white py-10 px-2">
+<script>
+
+</script>
+
+    
+
+    
+
+<footer class="bg-gradient-to-r from-sky-500 to-teal-600 text-white py-10 px-2">
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 place-items-center">
         <div class="mb-6 md:mb-0">
             <h3 class="text-center md:text-xl font-semibold mb-4">About wpNizzle</h3>
@@ -132,14 +144,15 @@
         <p>&copy; 2023 wpNizzle. All rights reserved.</p>
     </div>
 </footer>
-  
+    
+      
 
 <script>
-const currentYear = new Date().getFullYear();
-document.getElementById('current-year').textContent = currentYear;
+  const currentYear = new Date().getFullYear();
+  document.getElementById('current-year').textContent = currentYear;
 </script>
-  <script src="/src/Nizzle.js"></script>
-  <script src="/src/newsletter.js"></script>
-  <script src="/src/display-messages.js"></script>
+    <script src="/src/email.js"></script>
+    <script src="/src/newsletter.js"></script>
+<script src="/src/Nizzle.js"></script>
 </body>
 </html>
