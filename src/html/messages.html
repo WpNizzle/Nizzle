@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/public/logo.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Support Issues - wpnizzle.com</title>
+        <title>User Column manager - Add Custom columns to your WordPress user lists</title>
         
         <!-- Add meta tags for SEO -->
         <meta name="description" content="Discover high-quality WordPress plugins and themes at wpnizzle.com, designed to elevate your online business to new heights." />
@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="/src/input.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <script src="https://cdn.tailwindcss.com"></script>
-      </head>
+    </head>
 <body class="bg-gray-100">
     <!-- Navbar -->
     <nav class="fixed top-0 z-50 left-0 right-0 h-16 bg-gradient-to-r from-sky-500 to-teal-600 shadow-md text-white flex items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -83,12 +83,14 @@
         </div>
     </nav>
     <!-- end of navbar -->
-  <div class="container mx-auto min-h-screen py-20 p-8">
-    <h1 class="text-3xl font-semibold mb-4">Support Issues</h1>
-    <div id="issues-list" class="bg-white p-4 rounded-lg shadow-md">
-      <!-- Display issues here using JavaScript -->
+
+  <div class="container mx-auto p-8 pt-20 min-h-screen">
+    <h1 class="text-3xl font-semibold mb-4">Contact Messages</h1>
+    <div id="messages-list" class="bg-white p-4 rounded-lg shadow-md">
+      <!-- Display messages here using JavaScript -->
     </div>
   </div>
+
   <footer class="bg-gradient-to-r from-sky-500 to-teal-600 text-white py-10 px-2">
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 place-items-center">
         <div class="mb-6 md:mb-0">
@@ -124,10 +126,8 @@
 <script>
 const currentYear = new Date().getFullYear();
 document.getElementById('current-year').textContent = currentYear;
-</script>  
-
+</script>
   <script src="/src/Nizzle.js"></script>
-
-  <script src="/src/display.js"></script>
+  <script src="/src/display-messages.js"></script>
 </body>
 </html>
