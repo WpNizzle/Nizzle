@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/public/logo.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>User Column manager - Add Custom columns to your WordPress user lists</title>
+        <title>Support Center - wpnizzle.com</title>
         
         <!-- Add meta tags for SEO -->
         <meta name="description" content="Discover high-quality WordPress plugins and themes at wpnizzle.com, designed to elevate your online business to new heights." />
@@ -22,8 +22,8 @@
         <link rel="stylesheet" href="/src/input.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <script src="https://cdn.tailwindcss.com"></script>
-    </head>
-<body class="md:relative md:min-h-screen">
+      </head>
+<body class="bg-gray-100">
     <!-- Navbar -->
     <nav class="fixed top-0 z-50 left-0 right-0 h-16 bg-gradient-to-r from-sky-500 to-teal-600 shadow-md text-white flex items-center justify-between px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between md:justify-center w-full items-center">
@@ -83,75 +83,67 @@
         </div>
         </div>
     </nav>
-    <!-- end of navbar --> 
+    <!-- end of navbar -->
 
-    <section class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
-        <div class="max-w-3xl px-8 py-16 bg-white rounded-lg shadow-md">
-          <h1 class="md:text-4xl text-2xl font-semibold mb-4">Elevate User Management</h1>
-          <p class="text-gray-600 mb-8">Tailor your WordPress user lists to your needs using User Column Manager. Enhance user profile visibility by adding custom columns with vital information. Display additional fields, such as user levels, registration date, and more, directly in the admin panel. Streamline your user management process and gain valuable insights with this powerful plugin.</p>
-      
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="p-6 bg-blue-100 rounded-lg">
-              <h2 class="text-xl font-semibold mb-2">Customize User Profile Views</h2>
-              <p class="text-gray-600">Effortlessly modify the way you view user profiles. User Column Manager empowers you to personalize columns, so you can see the data that matters most to you.</p>
-            </div>
-            <div class="p-6 bg-green-100 rounded-lg">
-              <h2 class="text-xl font-semibold mb-2">Gain Insights at a Glance</h2>
-              <p class="text-gray-600">With User Column Manager, important user details are just a glance away. Easily access critical data like user roles, registration dates, and custom information, all within your WordPress admin panel.</p>
-            </div>
-          </div>
-      
-          <div class="grid grid-cols-1">
-            <div class="bg-white p-6 rounded-lg shadow-md">
-              <h2 class="text-xl font-semibold mb-4">Why Choose User Column Manager?</h2>
-              <p class="text-gray-700 mb-4">Unlock the potential of User Column Manager and optimize your WordPress user management. Enjoy these key benefits:</p>
-      
-              <ul class="list-disc list-inside text-gray-700 text-base">
-                <li class="mb-2">Tailored User Data: Display essential user details right where you need them for more informed decisions.</li>
-                <li class="mb-2">Efficient Workflow: Streamline user management with easy access to custom columns without leaving the admin panel.</li>
-                <li class="mb-2">Insightful Insights: Gain a comprehensive view of user profiles and make data-driven choices effortlessly.</li>
-                <li class="mb-2">Enhanced Productivity: Spend less time searching for user information and more time focusing on your tasks.</li>
-                <li class="mb-2">Seamless Integration: Integrate seamlessly into your existing WordPress workflow without any hassle.</li>
-                <li class="mb-2">Exceptional Support: Receive top-notch support whenever you need assistance or have questions.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>    
+  <div class="container mx-auto p-8 min-h-screen my-12">
+    <h1 class="text-3xl font-semibold mb-4">Support Center</h1>
+    <form id="support-form" class="bg-white p-4 rounded-lg shadow-md">
+      <div class="mb-4">
+        <label for="name" class="block font-semibold mb-2">Name</label>
+        <input type="text" id="name" class="w-full px-3 py-2 border rounded-md" required>
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block font-semibold mb-2">Email</label>
+        <input type="email" id="email" class="w-full px-3 py-2 border rounded-md" required>
+      </div>
+      <div class="mb-4">
+        <label for="issue" class="block font-semibold mb-2">Issue Description</label>
+        <textarea id="issue" class="w-full px-3 py-2 border rounded-md" rows="4" required></textarea>
+      </div>
+      <button type="button" id="submit-button" class=" bg-blue-500 text-white h-10 w-44 px-4 py-2 rounded-md hover:bg-teal-600">Submit Issue</button>
+    </form>    
+  </div>
 
-      <footer class="bg-gradient-to-r from-sky-500 to-teal-600 text-white py-10 px-2">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 place-items-center">
-            <div class="mb-6 md:mb-0">
-                <h3 class="text-center md:text-xl font-semibold mb-4">About wpNizzle</h3>
-                <p class="text-gray-100">Discover high-quality WordPress plugins, themes, and solutions designed to elevate your online business to new heights. Join us in shaping the future of WordPress.</p>
-            </div>
-            <div class="mb-6 md:mb-0">
-                <h3 class="md:text-xl font-semibold mb-4">Quick Links</h3>
-                <ul class="space-y-2">
-                <li><a href="/index.html#Products" class="hover:underline">Products</a></li>
-                <!-- <li><a href="/themes" class="hover:underline">Themes</a></li> -->
-                <li><a href="/index.html#Plugins" class="hover:underline">Plugins</a></li>              
-                <!-- <li><a href="/contact" class="hover:underline">Contact Us</a></li> -->
-                <li><a href="/index.html#RecentBlogs" class="hover:underline">Recent Blogs</a></li>
-                </ul>
-            </div>
-            <div class="">
-                <!-- <h3 class="text-xl font-semibold mb-4">Useful Resources</h3> -->
-                <ul class="space-y-2">
-                <!-- <li><a href="/documentation" class="hover:underline">Documentation</a></li> -->
-                <!-- <li><a href="/support" class="hover:underline">Support Center</a></li> -->
-                <!-- <li><a href="/demo" class="hover:underline">Live Demos</a></li> -->
-                <!-- <li><a href="/index.html#RecentBlogs" class="hover:underline">Recent Blogs</a></li> -->
-                <!-- <li><a href="/pricing" class="hover:underline">Pricing</a></li> -->
-                </ul>
-            </div>
+  <footer class="bg-gradient-to-r from-sky-500 to-teal-600 text-white py-10 px-2">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 place-items-center">
+        <div class="mb-6 md:mb-0">
+            <h3 class="text-center md:text-xl font-semibold mb-4">About wpNizzle</h3>
+            <p class="text-gray-100">Discover high-quality WordPress plugins, themes, and solutions designed to elevate your online business to new heights. Join us in shaping the future of WordPress.</p>
         </div>
-        <div class="mt-10 border-t border-white py-6 text-center">
-          <p>&copy; 2023 wpNizzle. All rights reserved.</p>
+        <div class="mb-6 md:mb-0">
+            <h3 class="md:text-xl font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+            <li><a href="/index.html#Products" class="hover:underline">Products</a></li>
+            <!-- <li><a href="/themes" class="hover:underline">Themes</a></li> -->
+            <li><a href="/index.html#Plugins" class="hover:underline">Plugins</a></li>              
+            <!-- <li><a href="/contact" class="hover:underline">Contact Us</a></li> -->
+            </ul>
         </div>
-    </footer>
-      
-    
-    <script src="../src/Nizzle.js"></script>
+        <div class="">
+            <h3 class="text-xl font-semibold mb-4">Useful Resources</h3>
+            <ul class="space-y-2">
+            <!-- <li><a href="/documentation" class="hover:underline">Documentation</a></li> -->
+            <li><a href="/src/html/support.html" class="hover:underline">Support Center</a></li>
+            <!-- <li><a href="/demo" class="hover:underline">Live Demos</a></li> -->
+            <li><a href="/index.html#RecentBlogs" class="hover:underline">Recent Blogs</a></li>
+            <!-- <li><a href="/pricing" class="hover:underline">Pricing</a></li> -->
+            </ul>
+        </div>
+    </div>
+    <div class="mt-10 border-t border-white py-6 text-center">
+      <p>&copy; 2023 wpNizzle. All rights reserved.</p>
+    </div>
+</footer>
+  
+
+<script>
+const currentYear = new Date().getFullYear();
+document.getElementById('current-year').textContent = currentYear;
+</script>
+  
+
+
+  <script src="/src/support.js"></script>
+  <script src="/src/Nizzle.js"></script>
 </body>
 </html>
