@@ -1,0 +1,22 @@
+{
+  "name": "nizzle",
+  "version": "1.0.0",
+  "description": "Welcome to WpNizzle, a company specializing in crafting high-quality WordPress plugins, themes, and website templates.",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WpNizzle/Nizzle.git"
+  },
+  "author": "wpnizzle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WpNizzle/Nizzle/issues"
+  },
+  "homepage": "https://wpnizzle.com/index.html",
+  "dependencies": {
+    "firebase": "^10.1.0"
+  }
+}
